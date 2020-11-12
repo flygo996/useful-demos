@@ -10,7 +10,7 @@
     <script>
       // 关键字高亮
       function highlightKeywords (str, keyword) {
-        const reg = new RegExp(keyword, 'i')
+        const reg = new RegExp(keyword, 'ig')
         if (str && keyword) {
           return str.replace(
             reg,
