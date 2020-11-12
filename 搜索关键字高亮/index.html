@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="content">你好，我是赖先生，你是哪位先生呀？</div>
+    <script>
+      // 关键字高亮
+      function highlightKeywords (str, keyword) {
+        const reg = new RegExp(keyword, 'i')
+        if (str && keyword) {
+          return str.replace(
+            reg,
+            `<span style="color: #409EFF;">${keyword}</span>`
+          )
+        }
+      }
+      // 高亮关键字
+      const dom = document.getElementById('content')
+      dom.innerHTML = highlightKeywords(dom.innerHTML, '先生')
+    </script>
+  </body>
+</html>
