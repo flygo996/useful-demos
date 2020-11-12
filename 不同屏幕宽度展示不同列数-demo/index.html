@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f2f5;
+      }
+      #content {
+        margin: 16px;
+        padding: 24px;
+        background-color: #fff;
+      }
+      #box {
+        display: flex;
+        flex-flow: wrap;
+        margin-top: -24px;
+        margin-right: -16px;
+      }
+      .item-wrap {
+        padding-top: 24px;
+        padding-right: 16px;
+        box-sizing: border-box;
+      }
+
+      @media screen and (max-width: 767px) {
+        .item-wrap {
+          width: 50%;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        .item-wrap {
+          width: 33.3333%;
+        }
+      }
+      @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        .item-wrap {
+          width: 25%;
+        }
+      }
+      @media screen and (min-width: 1400px) {
+        .item-wrap {
+          width: 20%;
+        }
+      }
+      .item {
+        overflow: hidden;
+        padding-top: calc(198 / 294 * 100%); /*图片宽高比例*/
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+      }
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+      h4.name {
+        font-size: 14px;
+        margin: 14px 0 9px;
+      }
+      .desc-group {
+        display: flex;
+      }
+
+      h6.time {
+        font-size: 14px;
+        margin: 0;
+      }
+      .btn-group {
+        margin-right: -16px;
+        margin-top: -10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .btn {
+        margin-top: 10px;
+        margin-right: 16px;
+        padding: 0 8px;
+        height: 22px;
+        line-height: 22px;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <div id="box">
+        <div class="item-wrap">
+          <div class="item">
+            <img src="./image.jpg" alt="" />
+          </div>
+          <h4 class="name">
+            西蒙-人体感应开关(二线,白炽灯,电子荧光灯)-45e305-192885
+          </h4>
+          <div class="btn-group">
+            <div class="btn">项目部</div>
+            <div class="btn">建设用地、拆迁文件</div>
+            <div class="btn">3号楼_2F_205户</div>
+          </div>
+          <h6 class="time">2020-10-02 10:20</h6>
+        </div>
+        <div class="item-wrap">
+          <div class="item"></div>
+        </div>
+        <div class="item-wrap">
+          <div class="item"></div>
+        </div>
+        <div class="item-wrap">
+          <div class="item"></div>
+        </div>
+        <div class="item-wrap">
+          <div class="item"></div>
+        </div>
+        <div class="item-wrap">
+          <div class="item"></div>
+        </div>
+        <div class="item-wrap">
+          <div class="item"></div>
+        </div>
+        <div class="item-wrap">
+          <div class="item"></div>
+        </div>
+        <div class="item-wrap">
+          <div class="item"></div>
+        </div>
+        <div class="item-wrap">
+          <div class="item"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
